@@ -53,6 +53,16 @@ body{
         "footer footer footer footer"
     ;
 }
+.contacto{
+    display: grid;
+    background-color: #78794f;
+    grid-template-areas:
+        "header header header header"
+        "contacto contacto contacto contacto"
+        "main main main main"
+        "footer footer footer footer"
+    ;
+}
 /* header del index */
 .index__header{
     grid-area: header;
@@ -222,6 +232,9 @@ body{
 .sobreMi__main__section{
     width: 100%;
 }
+.home__nombre__h2__sobre-mi{
+    margin-left: -92px;
+}
 /* Footer de sobre mi */
 .raidy__footer__home{
     grid-area: footer;
@@ -230,6 +243,25 @@ body{
     align-items: center;
     text-align: center;
     margin-top: auto;
+}
+/* Main de contacto */
+.contacto__main{
+    display: flex;
+    text-align: center;
+    margin: auto;
+}
+.contacto__main__section{
+    margin-top: 15%;
+}
+.formulario__contacto{
+    margin-top: 15%;
+    margin-left: 3%;
+}
+.home__nombre__h2__contacto{
+    margin-left: -93.3px;
+}
+.contacto__p{
+    margin-top: 5px;
 }
 /* Media Queris */
 @media screen and (max-width: 768px) {
