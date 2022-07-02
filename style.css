@@ -62,6 +62,32 @@ body{
         "footer footer footer footer"
     ;
 }
+.mantenimietoPC{
+    display: grid;
+    background-color: #78794f;
+    grid-template-areas:
+        "header header header header"
+        "main main main main"
+        "footer footer footer footer"
+    ;
+}
+.desarrolloWeb{
+    display: grid;
+    background-color: #78794f;
+    grid-template-areas:
+        "header header header header"
+        "main main main main"
+        "footer footer footer footer"
+    ;
+}
+.SK7__body{
+    display: grid;
+    background-color: black;
+    grid-template-areas:
+        "header header header header"
+        "main main main main"
+    ;
+}
 /* header del index */
 .index__header{
     grid-area: header;
@@ -276,7 +302,96 @@ body{
     text-align: center;
     margin-left: 2%;
 }
-
+/* Header mantenimiento de pc */
+.home__nombre__h2__mantemimientoPC{
+    margin-left: 42%;
+}
+/* Main mantenimiento de pc */
+.mantenimientoPC__main{
+    grid-area: main;
+}
+.mantenimientoPC__main__section{
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+.h1__mantenimientoPC{
+    text-align: center;
+}
+.p__mantenimientoPC{
+    margin-top: 25px;
+}
+.mantenimientoPC__foto{
+    width: 25%;
+    margin: 1cm;
+}
+.mantenimientoPC__info{
+    width: 65%;
+}
+/* Header de Desarrollo Web */
+.home__nombre__desarrollo{
+    margin-left: 42%;
+}
+/* Main de Desarrollo Web */
+.desarrolloWeb__main{
+    grid-area: main;
+}
+.desarrolloWeb__main__section{
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+.desarrolloWeb__main__section__img{
+    width: 25%;
+    margin: 1cm;
+}
+.desarrolloWeb__info{
+    width: 65%;
+}
+.desarrolloWeb__p{
+    margin-top: 25px;
+}
+.desarrolloWeb__h1{
+    text-align: center;
+}
+/* Header de SK7 */
+.SK7__header{
+    grid-area: header;
+    background-color: rgb(57, 0, 80);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    height: 70px;
+}
+.SK7__h1{
+    color: white;
+}
+.SK7__header__div__a{
+    color: white;
+}
+.SK7__header__div__a{
+    padding-right: 15px;
+}
+/* Main de SK7 */
+.SK7__main{
+    display: flex;
+}
+.SK7__img{
+    width: 25%;
+    margin: 1cm;
+}
+.SK7__main__div{
+    text-align: center;
+    align-items: center;
+    border: 1px solid white;
+    margin-left: 45px;
+    height: 500px;
+    margin-top: 40px;
+}
+.SK7__main__p{
+    color: white;
+}
 /* Media Queris */
 @media screen and (max-width: 768px) {
     /* Index */
