@@ -81,7 +81,6 @@ body{
     ;
 }
 .SK7__body{
-    display: grid;
     background-color: black;
     grid-template-areas:
         "header header header header"
@@ -364,7 +363,7 @@ body{
     padding: 15px;
     height: 70px;
 }
-.SK7__h1{
+.SK7__h{
     color: white;
 }
 .SK7__header__div__a{
@@ -392,6 +391,42 @@ body{
 .SK7__main__p{
     color: white;
 }
+/* Discografia de SK7 */
+.SK7__main__discografia{
+    grid-area: main;
+    margin: 1cm;
+}
+.SK7__section__discografia{
+    display: flex;
+    margin-top: 15px;
+}
+.sencillosEP{
+    margin-top: 15px;
+    color: white;
+}
+.discografia__section_a{
+    color: violet;
+    margin-right: 30px;
+}
+.discografia__section__SK7{
+    margin-top: 15px;
+}
+/* Galeria SK7 */
+.grilla{
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+    background-color: aqua;
+    border-radius: 6px;
+    border: solid 1px red;
+}
+.galeria__SK7{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px));
+    grid-auto-rows: 70px;
+    grid-template-columns: 80px;
+    gap: 20px;
+}
 /* Media Queris */
 @media screen and (max-width: 768px) {
     /* Index */
@@ -412,7 +447,71 @@ body{
     }
     .raidy__footer__home{
         margin-top: auto;
-    } 
+    }
+/* Mantenimiento de pc */
+    .home__nombre__h2__mantemimientoPC{
+        margin-left: 35%;
+    }
+    .h1__mantenimientoPC{
+        margin-top: 5px;
+    }
+    .mantenimientoPC__foto{
+        width: 40%;
+    }
+    .mantenimientoPC__info{
+        margin-top: 15px;
+    }
+    .p__mantenimientoPC{
+        margin-bottom: 7px;
+    }
+    /* Desarrollo Web */
+    .desarrolloWeb__info{
+        margin-top: 25px;
+    }
+    .desarrolloWeb__main__section__img{
+        width: 35%;
+    }
+    .desarrolloWeb__p__lorem{
+        margin-right: 25px;
+    }
+    /* Servicios */
+    .servi__section__div{
+        width: 25%;
+    }
+    .servi__section__desarrollo{
+        width: 30%;
+        margin-right: 15px;
+    }
+    .servi__section__backend{
+        width: 30%;
+    }
+    /* Sobre Mi */
+    /* Contacto */
+    .contacto{
+        height: 100vh;
+    }
+    .contacto__main__section{
+        flex-direction: column;
+    }
+    .home__nombre__h2__contacto{
+        margin-left: 1px;
+    }
+    .img__contacto{
+        width: 98%;
+    }
+    .contacto__h1{
+        margin-top: 15px;
+    }
+    .contacto__p{
+        width: 90%;
+    }
+    .contacto__main__section__p{
+        margin-right: 25px;
+    }
+    .textarea{
+        width: 260px;
+    }
+    
 }
 @media screen and (max-width: 425px) {
     /* Index */
@@ -442,7 +541,114 @@ body{
     }
     .raidy__footer__home{
         margin-top: auto;
-    } 
+    }
+    /* Mantenimiento de pc */
+    .home__nombre__h2__mantemimientoPC{
+        margin-left: 130px;
+    }
+    .h1__mantenimientoPC{
+        margin-top: 5px;
+    }
+    .mantenimientoPC__main__section{
+        flex-direction: column;
+    }
+    .mantenimientoPC__foto{
+        width: 60%;
+    }
+    .p__mantenimientoPC{
+        margin-bottom: 7px;        
+    }
+    /* Desarrollo Web */
+    .desarrolloWeb__main__section{
+        flex-direction: column;
+    }
+    .desarrolloWeb__h1{
+        margin-top: 25px;
+    }
+    .desarrolloWeb__main__section__img{
+        width: 60%;
+    }
+    .desarrolloWeb__p{
+        margin-bottom: 10px;
+    }
+    .home__nombre__desarrollo{
+        margin-left: 30%;
+    }
+    /* Servicios */
+    .servi{
+        height: 100vh;
+    }
+    .servi__h1{
+        margin-top: 5%;
+    }
+    .servi__section__div{
+        width: 70%;
+        margin-left: 40px;
+        margin-bottom: 10px;
+    }
+    .servi__section__desarrollo{
+        width: 70%;
+        margin-bottom: 10px;
+    }
+    .servi__section__backend{
+        width: 70%;
+        margin-right: 10%;
+        margin-bottom: 30px;
+    }
+    .servi__main__section{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .home__nombre__h2{
+        margin-left: 15px;
+    }
+    /* Sobre Mi */
+    .sobre-mi{
+        height: 100vh;
+    }
+    .sobreMi__main__section{
+        flex-direction: column;
+        align-items: center;
+    }
+    .sobre-mi__main__section-img{
+        width: 60%;
+        margin-right: 45px;
+    }
+    .p__sobremi{
+        margin-right: 25px;
+    }
+    .sobre-mi__h3{
+        margin-top: 15px;
+    }
+    .home__nombre__h2__sobre-mi{
+        margin-left: 1px;
+    }
+    /* Contacto */
+    .contacto{
+        height: 100vh;
+    }
+    .contacto__main__section{
+        flex-direction: column;
+    }
+    .home__nombre__h2__contacto{
+        margin-left: 1px;
+    }
+    .img__contacto{
+        width: 98%;
+    }
+    .contacto__h1{
+        margin-top: 15px;
+    }
+    .contacto__p{
+        width: 90%;
+    }
+    .contacto__main__section__p{
+        margin-right: 25px;
+    }
+    .textarea{
+        width: 260px;
+    }
 }
 @media screen and (max-width: 375px) {
     /* Index */
@@ -473,7 +679,113 @@ body{
     .raidy__footer__home{
         margin-top: auto;
     }
-
+    /* Mantenimiento de pc */
+    .home__nombre__h2__mantemimientoPC{
+        margin-left: 100px;
+    }
+    .h1__mantenimientoPC{
+        margin-top: 5px;
+    }
+    .mantenimientoPC__main__section{
+        flex-direction: column;
+    }
+    .mantenimientoPC__foto{
+        width: 60%;
+    }
+    .p__mantenimientoPC{
+        margin-bottom: 7px;
+    }
+    /* Desarrollo Web */
+    .desarrolloWeb__main__section{
+        flex-direction: column;
+    }
+    .desarrolloWeb__h1{
+        margin-top: 25px;
+    }
+    .desarrolloWeb__main__section__img{
+        width: 60%;
+    }
+    .desarrolloWeb__p{
+        margin-bottom: 10px;
+    }
+    .home__nombre__desarrollo{
+        margin-left: 25%;
+    }
+    /* Servicios */
+    .servi{
+        height: 100vh;
+    }
+    .servi__h1{
+        margin-top: 5%;
+    }
+    .servi__section__div{
+        width: 70%;
+        margin-left: 36px;
+        margin-bottom: 10px;
+    }
+    .servi__section__desarrollo{
+        width: 70%;
+        margin-bottom: 10px;
+    }
+    .servi__section__backend{
+        width: 70%;
+        margin-right: 10%;
+        margin-bottom: 30px;
+    }
+    .servi__main__section{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .home__nombre__h2{
+        margin-left: 15px;
+    }
+    /* Sobre Mi */
+    .sobre-mi{
+        height: 100vh;
+    }
+    .sobreMi__main__section{
+        flex-direction: column;
+        align-items: center;
+    }
+    .sobre-mi__main__section-img{
+        width: 60%;
+        margin-right: 45px;
+    }
+    .p__sobremi{
+        margin-right: 25px;
+    }
+    .sobre-mi__h3{
+        margin-top: 15px;
+    }
+    .home__nombre__h2__sobre-mi{
+        margin-left: 1px;
+    }
+    /* Contacto */
+    .contacto{
+        height: 100vh;
+    }
+    .contacto__main__section{
+        flex-direction: column;
+    }
+    .home__nombre__h2__contacto{
+        margin-left: 1px;
+    }
+    .img__contacto{
+        width: 98%;
+    }
+    .contacto__h1{
+        margin-top: 15px;
+    }
+    .contacto__p{
+        width: 90%;
+    }
+    .contacto__main__section__p{
+        margin-right: 25px;
+    }
+    .textarea{
+        width: 260px;
+    }
 }
 @media screen and (max-width: 320px) {
     /* Index */
@@ -506,5 +818,112 @@ body{
     .home__main__img {
         width: 100%;
         height: 180px;
+    }
+    /* Mantenimiento de pc */
+    .home__nombre__h2__mantemimientoPC{
+        margin-left: 70px;
+    }
+    .h1__mantenimientoPC{
+        margin-top: 5px;
+    }
+    .mantenimientoPC__main__section{
+        flex-direction: column;
+    }
+    .mantenimientoPC__foto{
+        width: 60%;
+    }
+    .p__mantenimientoPC{
+        margin-bottom: 7px;
+    }
+    /* Desarrollo Web */
+    .desarrolloWeb__main__section{
+        flex-direction: column;
+    }
+    .desarrolloWeb__h1{
+        margin-top: 25px;
+    }
+    .desarrolloWeb__main__section__img{
+        width: 60%;
+    }
+    .desarrolloWeb__p{
+        margin-bottom: 10px;
+    }
+    .home__nombre__desarrollo{
+        margin-left: 25%;
+    }
+    /* Servicios */
+    .servi{
+        height: 100vh;
+    }
+    .servi__h1{
+        margin-top: 5%;
+    }
+    .servi__section__div{
+        width: 70%;
+        margin-left: 32px;
+        margin-bottom: 10px;
+    }
+    .servi__section__desarrollo{
+        width: 70%;
+        margin-bottom: 10px;
+    }
+    .servi__section__backend{
+        width: 70%;
+        margin-right: 10%;
+        margin-bottom: 30px;
+    }
+    .servi__main__section{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .home__nombre__h2{
+        margin-left: 15px;
+    }
+    /* Sobre Mi */
+    .sobre-mi{
+        height: 100vh;
+    }
+    .sobreMi__main__section{
+        flex-direction: column;
+        align-items: center;
+    }
+    .sobre-mi__main__section-img{
+        width: 60%;
+        margin-right: 45px;
+    }
+    .p__sobremi{
+        margin-right: 25px;
+    }
+    .sobre-mi__h3{
+        margin-top: 15px;
+    }
+    .home__nombre__h2__sobre-mi{
+        margin-left: 1px;
+    }
+    /* Contacto */
+    .contacto{
+        height: 100vh;
+    }
+    .contacto__main__section{
+        flex-direction: column;
+    }
+    .home__nombre__h2__contacto{
+        margin-left: 1px;
+    }
+    .img__contacto{
+        width: 98%;
+    }
+    .contacto__h1{
+        margin-top: 15px;
+    }
+    .contacto__p{
+        width: 90%;
+    }
+    .contacto__main__section__p{
+        margin-right: 25px;
+    }
+    .textarea{
+        width: 260px;
     }
 }
