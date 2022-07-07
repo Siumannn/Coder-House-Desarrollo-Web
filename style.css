@@ -137,6 +137,9 @@ body{
     display: flex;
     background-color: #37718E;
 }
+.home__header__link:hover{
+    color: white;
+}
 .home__header__logo{
     width: 58px;
 }
@@ -180,6 +183,9 @@ body{
 .servi__h1{
     text-align: center;
     margin-top: -40px;
+}
+.info__servi:hover{
+    color: blue;
 }
 .servi__main__section{
     display: flex;
@@ -262,8 +268,7 @@ body{
     border: 1px solid white;
     color: black;
     background-color: aqua;
-    border-radius: 2cm;
-    
+    border-radius: 2cm;    
 }
 /* Footer de sobre mi */
 .raidy__footer__home{
@@ -300,6 +305,31 @@ body{
 .formulario__contacto{
     text-align: center;
     margin-left: 2%;
+}
+.falsoCarrusel{
+    width: 35%;
+    height: 150px;
+    margin:50px auto;
+    margin-right: 15px;
+    border: 1px solid white;
+    animation: carrusel 10s infinite;
+}
+@keyframes carrusel{
+    0%{
+        background-image: url(./logos/Reseñas\ de\ clientes\ \(10\).png);
+    }
+    20%{
+        background-image: url(./logos/Reseñas\ de\ clientes\ \(9\).png);
+    }
+    45%{
+        background-image: url(./logos/Reseñas\ de\ clientes\ \(8\).png);
+    }
+    70%{
+        background-image: url(./logos/Reseñas\ de\ clientes\ \(7\).png);
+    }
+    100%{
+        background-image: url(./logos/Reseñas\ de\ clientes\ \(6\).png);
+    }
 }
 /* Header mantenimiento de pc */
 .home__nombre__h2__mantemimientoPC{
