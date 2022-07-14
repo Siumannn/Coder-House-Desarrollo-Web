@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Raidy-Contacto</title>
     <link rel="icon" type="image/jpg" href="../logos/Logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,11 +14,23 @@
 </head>
 <body class="contacto">
     <header class="home__header">
-        <!-- Cabecera del sitio -->
-        <a href="./home.html"><img class="home__header__logo" src="../logos/Logo.png" alt="logo"></a>
-        <a class="home__header__link" href="./servicios.html">Servicios</a>
-        <h2 class="home__nombre__h2__contacto">Raidy</h2>
-        <a class="home__header__link" href="./sobre-mi.html">Sobre Mi</a>
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page"><img class="logo" src="../logos/Logo.png" alt="logo"></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./home.html">HOME</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./servicios.html">SERVICIOS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./sobre-mi.html">SOBRE MI</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">CONTACTO</a>
+            </li>
+        </ul>
     </header>
     <main class="contacto__main">
         <h1 class="contacto__h1">Contacto</h1>
@@ -28,22 +41,25 @@
                 <iframe class="img__contacto" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.436274964803!2d-60.95674840462672!3d-34.59312794423781!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b894d4a4b65343%3A0x1b8878db925f8722!2sParaguay%20179%2C%20Jun%C3%ADn%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1654647533489!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 <p class="contacto__main__section__p">Mi ubicacion👆</p>
             </div>
-            <div class="formulario__contacto">
-                <h2>Contactame aqui</h2>
-                <form class="cuestionario" action="https://formspree.io/f/xzboqrnd"
-                method="POST">
-                    <input type="text" name="name" placeholder="Nombre y apellido">
-                    <input type="email" name="email" placeholder="Correo electronico">
-                    <p><textarea class="textarea" name="message" rows="10" cols="50" placeholder="Escribe..."></textarea></p>
-                    <p>(Durante el dia seras respondido, gracias y disculpe la demora)</p>
-                    <input type="submit">
-                    <input type="reset">
-                </form>
-            </div>
-            <div class="falsoCarrusel">
-                
-
-            </div>
+            <form class="row-g-3">
+                <div class="col-md-6">
+                  <label for="inputEmail4" class="form-label">Correo Electronico:</label>
+                  <input type="email" class="form-control" id="inputEmail4">
+                </div>
+                <div class="col-12">
+                  <label for="inputAddress" class="form-label">Nombre y apellido:</label>
+                  <input type="text" class="form-control" id="inputAddress">
+                </div>
+                <div class="col-12">
+                  <label for="inputAddress2" class="form-label">Ingrese el texto:</label>
+                  <input type="text" class="form-control" id="inputAddress2">
+                </div>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-primary">ENVIAR</button>
+                </div>
+            </form>
+            <div class="falsoCarrusel"></div>
         </section>
     </main>
     <footer class="raidy__footer__home">
@@ -56,5 +72,7 @@
                     target="_blank"><img class="raidy__footer__redes" src="../logos/linkeding.png" alt="logoLinkedin"></a>
         </section>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>
 </html>
