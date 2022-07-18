@@ -1,3 +1,27 @@
+/* Ajustes generales */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    font-style: none;
+    
+}
+a:hover{
+    color: yellow;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+ul {
+    list-style: none;
+}
+
 /* Distintos bodys */
 .index{
     background-image: url(./logos/outerspace-58.gif);
@@ -11,7 +35,7 @@
     ;
 }
 .home{
-    background-color: #78794f;
+    background-color:#78794f;
     display: grid;
     grid-template-areas: 
         "header header header header" 
@@ -71,6 +95,81 @@
         "main main main main"
     ;
 }
+/* Header del Home */
+.home__header{
+    grid-area: header;
+    padding: 10px;
+    align-items: center;
+    height: 65px;
+    display: flex;
+    background-color: #37718E;
+}
+.logo{
+    width: 50px;
+}
+.home__header__lista {
+    margin: auto;    
+}
+.anchors__home__header{
+    color: black;
+    margin-right: 30px;
+    border-bottom: 1px solid white;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+.inicio__home{
+    background-color: aqua;    
+}
+.inicio__home:hover{
+    color: black;
+}
+.servicios__home{
+    background-color: aqua;
+}
+.servicios__home:hover{
+    color: black;
+}
+.sobreMi__home{
+    background-color: aqua;
+}
+.sobreMi__home:hover{
+    color: black;
+}
+.contacto__home{
+    background-color: aqua;
+}
+.contacto__home:hover{
+    color: black;
+}
+/* Main del Home */
+.home__main{
+    grid-area: main;
+}
+.card-img-top{
+    height: 392.5px;
+}
+.card{
+    background-color: #78794f;
+}
+.card-title{
+    color: white;
+}
+.anchors__servi__p{
+    text-align: center;
+}
+.secciones{
+    color: black;
+    border: 1px solid white;
+}
+/* Footer Home */
+.raidy__footer__home{
+    grid-area: footer;
+    background-color: cornflowerblue;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 6.7%;    
+}
 /* header del index */
 .index__header{
     grid-area: header;
@@ -80,6 +179,10 @@
     width: 18.5%;
 }
 /* main del index */
+.index__p__bootstrap{
+    color: white;
+    text-align: center;
+}
 .grid{
     color: white;
     text-align: center;
@@ -90,7 +193,7 @@
 .banderas{
     margin-top: 5%;
     margin-left: 25%;
-    letter-spacing: 1cm;
+    letter-spacing: 2cm;
 }
 .index__bandera__idioma__espanol{
     width: 9%;
@@ -105,40 +208,6 @@
 .raidy__footer__redes{
     width: 3%;
 }
-/* Header del Home */
-.home__header{
-    grid-area: header;
-    padding: 10px;
-    align-items: center;
-    height: 65px;
-    display: flex;
-    background-color: #37718E;
-}
-.logo{
-    width: 50px;
-}
-.nav-link{
-    color: white;
-}
-.nav-link:hover{
-    color: yellow;
-}
-/* Main del Home */
-.home__main{
-    grid-area: main;
-}
-.card-img-top{
-    height: 392.5px;
-}
-/* Footer Home */
-.raidy__footer__home{
-    grid-area: footer;
-    background-color: cornflowerblue;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    margin-top: 6.7%;    
-}
 /* Main Servicios */
 .servicios__main{
     grid-area: main;
@@ -152,7 +221,6 @@
     text-align: center;
     margin-top: auto;
 }
-/* Main de sobre mi */
 .sobre-mi{
     grid-area: main;
 }
@@ -179,9 +247,7 @@
     margin: 1cm;
 }
 .SK7{
-    border: 1px solid white;
-    color: black;
-    background-color: aqua;
+    color: rgb(255, 255, 255);
     border-radius: 2cm;    
 }
 /* Main de contacto */
@@ -244,6 +310,7 @@
         background-image: url(./logos/Reseñas\ de\ clientes\ \(6\).png);
     }
 }
+/* Header mantenimiento de pc */
 /* Main mantenimiento de pc */
 .mantenimientoPC__main{
     grid-area: main;
@@ -299,13 +366,14 @@
 .SK7__main__div{
     text-align: center;
     align-items: center;
-    border: 1px solid white;
-    margin-left: 45px;
+    margin-left: 30px;
     height: 500px;
     margin-top: 40px;
 }
 .SK7__main__p{
     color: white;
+    margin-top: 16.5%;
+    margin-right: 50px;
 }
 /* Discografia de SK7 */
 .SK7__main__discografia{
@@ -331,4 +399,59 @@
     color: white;
 }
 /* Galeria SK7 */
+.h2__galeria__sk7{
+    margin-top: 50px;
+    margin-left: 11px;
+    color: white;
+}
 /* Media Queris */
+@media screen and (max-width:768px){
+    .index__pregunta{
+        width: 30%;
+    }
+    .index__p__bootstrap{
+        font-size: 15px;
+        margin-right: 20px;
+    }
+    .grid{
+        display: block;
+    }
+    .banderas{
+        margin: auto;
+        width: 55%;
+        letter-spacing: 3cm;
+    }
+    .video{
+        margin-top: 40px;
+        width: 40%;
+        height: 180px;
+    }
+    .raidy__footer__redes{
+        width: 5%;
+    }
+}
+@media screen and (max-width:425px){
+    .index__pregunta{
+        width: 52%;
+    }
+    .index__p__bootstrap{
+        font-size: 15px;
+        margin-right: 20px;
+    }
+    .grid{
+        display: block;
+    }
+    .banderas{
+        margin: auto;
+        width: 80%;
+        letter-spacing: 3cm;
+    }
+    .video{
+        margin-top: 50px;
+        width: 60%;
+        height: 60%;
+    }
+    .raidy__footer__redes{
+        width: 8%;
+    }
+}
