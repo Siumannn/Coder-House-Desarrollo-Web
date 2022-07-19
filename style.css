@@ -141,6 +141,9 @@ ul {
 .contacto__home:hover{
     color: black;
 }
+.menu__desplegable{
+    display: none;
+}
 /* Main del Home */
 .home__main{
     grid-area: main;
@@ -429,6 +432,13 @@ ul {
     .raidy__footer__redes{
         width: 5%;
     }
+    /* home */
+    .card{
+        height: 475px;
+    }
+    .menu__desplegable{
+        display: none;
+    }
 }
 @media screen and (max-width:425px){
     .index__pregunta{
@@ -453,5 +463,75 @@ ul {
     }
     .raidy__footer__redes{
         width: 8%;
+    }
+    /* home */
+    .card{
+        height: 550px;
+    }
+    .contacto__header__home{
+        margin-left: 85px;
+    }
+}
+@media screen and (max-width:375px) {
+    .home__header{
+        height: 135px;
+    }
+    .home__header__lista{
+        display: none;
+    }
+    .menu__desplegable{
+        display: block;
+        position: relative;
+        margin-left: 73%;
+    }
+    .menu{
+        display: none;
+    }
+    .secciones__li__home{
+        display: flex;
+        position: absolute;
+        text-align: center;
+        
+    }
+    .hamburguesa{
+        background-color: grey;
+        width: 50px;
+        height: 48px;
+        border-radius: 6px;
+        display: block;
+        padding: 0.2px;
+    }
+    .hamburguesa span{
+        width: 35px;
+        height: 5px;
+        background-color: white;
+        display: block;
+        margin: 8px;
+    }
+    .input{
+        position: absolute;
+        top: 0;
+        margin: 18.5px;
+        display: none;
+    }
+    .input:checked + .menu{
+        display: block;
+        transform: translate(-320px,5px);
+    }
+    .anchors__home{
+        margin-right: 15px;
+        color: black;
+    }
+}
+@media screen and (max-width:320px){
+    .menu__desplegable{
+        margin-left: 67.5%;
+    }
+    .input:checked + .menu{
+        display: block;
+        transform: translate(-270px,10px);
+    }
+    .anchors__home{
+        font-size: 13px;     
     }
 }
