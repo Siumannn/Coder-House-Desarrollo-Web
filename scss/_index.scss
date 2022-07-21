@@ -1,0 +1,38 @@
+/* header del index */
+.index__header{
+    grid-area: header;
+    text-align: center;
+}
+.index__pregunta{
+    width: 18.5%;
+}
+/* main del index */
+.index__p__bootstrap{
+    color: white;
+    text-align: center;
+}
+.grid{
+    color: white;
+    text-align: center;
+}
+.bootstrapp{
+    display: flex;
+}
+.banderas{
+    margin-top: 5%;
+    margin-left: 25%;
+    letter-spacing: 2cm;
+}
+.index__bandera__idioma__espanol{
+    width: 9%;
+    height: 22%;
+}
+.index__bandera__idioma__ingles{
+    width: 9%;
+    height: 22%;
+    margin: auto;
+}
+/* Footer Index */
+.raidy__footer__redes{
+    width: 3%;
+}

@@ -1,0 +1,43 @@
+/* Main de contacto */
+.contacto__main{
+    grid-area: main;
+}
+.contacto__h1{
+    text-align: center;
+}
+.contacto__p{
+    margin-top: 25px;
+    text-align: center;
+}
+.contacto__main__section{
+    display: flex;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+.contacto__main__section__p{
+    text-align: center;
+}
+#inputEmail4{
+    width: 250px;
+}
+#inputAddress{
+    width: 100%;
+}
+#inputAddress2{
+    width: 100%;
+}
+.row-g-3{
+    margin-left: 80px;
+}
+.btn-primary{
+    margin-top: 15px;
+    margin-left: 85px;
+}
+.falsoCarrusel{
+    width: 35%;
+    height: 150px;
+    margin:50px auto;
+    margin-right: 15px;
+    border: 1px solid white;
+    animation: carrusel 10s infinite;
+}

@@ -1,0 +1,13 @@
+/* Main Servicios */
+.servicios__main{
+    grid-area: main;
+}
+/* Footer servicios */
+.raidy__footer__home{
+    grid-area: footer;
+    background-color: cornflowerblue;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: auto;
+}

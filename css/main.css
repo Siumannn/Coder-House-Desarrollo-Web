@@ -1,0 +1,263 @@
+/* Distintos bodys */
+.index {
+  background-image: url(../logos/outerspace-58.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  grid-template-areas: "header header header header"  "main main main main" "footer footer footer footer"; }
+
+.home {
+  display: grid;
+  grid-template-areas: "header header header header"  "main main main main" "footer footer footer footer"; }
+
+.servi {
+  background-color: #78794f;
+  display: grid;
+  grid-template-areas: "header header header header"  "main main main main" "footer footer footer footer"; }
+
+.sobre-mi {
+  display: grid;
+  background-color: #78794f;
+  grid-template-areas: "header header header header"  "main main main main" "footer footer footer footer"; }
+
+.contacto {
+  display: grid;
+  background-color: #78794f;
+  grid-template-areas: "header header header header" "main main main main" "footer footer footer footer"; }
+
+.mantenimietoPC {
+  display: grid;
+  background-color: #78794f;
+  grid-template-areas: "header header header header" "main main main main" "footer footer footer footer"; }
+
+.desarrolloWeb {
+  display: grid;
+  background-color: #78794f;
+  grid-template-areas: "header header header header" "main main main main" "footer footer footer footer"; }
+
+.SK7__body {
+  background-color: black;
+  grid-template-areas: "header header header header" "main main main main"; }
+
+/* Main de contacto */
+.contacto__main {
+  grid-area: main; }
+
+.contacto__h1 {
+  text-align: center; }
+
+.contacto__p {
+  margin-top: 25px;
+  text-align: center; }
+
+.contacto__main__section {
+  display: flex;
+  margin-top: 5%;
+  margin-left: 5%; }
+
+.contacto__main__section__p {
+  text-align: center; }
+
+#inputEmail4 {
+  width: 250px; }
+
+#inputAddress {
+  width: 100%; }
+
+#inputAddress2 {
+  width: 100%; }
+
+.row-g-3 {
+  margin-left: 80px; }
+
+.btn-primary {
+  margin-top: 15px;
+  margin-left: 85px; }
+
+.falsoCarrusel {
+  width: 35%;
+  height: 150px;
+  margin: 50px auto;
+  margin-right: 15px;
+  border: 1px solid white;
+  animation: carrusel 10s infinite; }
+
+/* Ajustes generales */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none;
+  font-style: none; }
+
+a:hover {
+  color: yellow; }
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; }
+
+ul {
+  list-style: none; }
+
+/* Header del Home */
+.home__header {
+  grid-area: header;
+  padding: 10px;
+  align-items: center;
+  height: 65px;
+  display: flex;
+  background-color: #37718E; }
+
+.logo {
+  width: 50px; }
+
+.home__header__lista {
+  margin: auto; }
+
+.anchors__home__header {
+  color: black;
+  margin-right: 30px;
+  border-bottom: 1px solid white;
+  border-left: 1px solid white;
+  border-right: 1px solid white; }
+
+.inicio__home {
+  background-color: aqua; }
+
+.inicio__home:hover {
+  color: black; }
+
+.servicios__home {
+  background-color: aqua; }
+
+.servicios__home:hover {
+  color: black; }
+
+.sobreMi__home {
+  background-color: aqua; }
+
+.sobreMi__home:hover {
+  color: black; }
+
+.contacto__home {
+  background-color: aqua; }
+
+.contacto__home:hover {
+  color: black; }
+
+.menu__desplegable {
+  display: none; }
+
+/* Main del Home */
+.home__main {
+  grid-area: main; }
+
+.card-img-top {
+  height: 392.5px; }
+
+.card {
+  background-color: #78794f; }
+
+.card-title {
+  color: white; }
+
+.anchors__servi__p {
+  text-align: center; }
+
+.secciones {
+  color: black;
+  border: 1px solid white; }
+
+/* Footer Home */
+.raidy__footer__home {
+  grid-area: footer;
+  background-color: cornflowerblue;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-top: 6.7%; }
+
+/* header del index */
+.index__header {
+  grid-area: header;
+  text-align: center; }
+
+.index__pregunta {
+  width: 18.5%; }
+
+/* main del index */
+.index__p__bootstrap {
+  color: white;
+  text-align: center; }
+
+.grid {
+  color: white;
+  text-align: center; }
+
+.bootstrapp {
+  display: flex; }
+
+.banderas {
+  margin-top: 5%;
+  margin-left: 25%;
+  letter-spacing: 2cm; }
+
+.index__bandera__idioma__espanol {
+  width: 9%;
+  height: 22%; }
+
+.index__bandera__idioma__ingles {
+  width: 9%;
+  height: 22%;
+  margin: auto; }
+
+/* Footer Index */
+.raidy__footer__redes {
+  width: 3%; }
+
+/* Main Servicios */
+.servicios__main {
+  grid-area: main; }
+
+/* Footer servicios */
+.raidy__footer__home {
+  grid-area: footer;
+  background-color: cornflowerblue;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-top: auto; }
+
+.sobre-mi {
+  grid-area: main; }
+
+.sobre-mi__main__section {
+  text-align: center;
+  margin-top: 25px; }
+
+.sobreMi__main__section {
+  display: flex;
+  margin-top: 25px; }
+
+.sobreMi__yo {
+  text-align: center;
+  margin-left: 45px; }
+
+.sobre-mi__main__section-img {
+  width: 350px; }
+
+.miBio {
+  text-align: center; }
+
+.texto {
+  margin-top: 15px;
+  margin: 1cm; }
+
+.SK7 {
+  color: white;
+  border-radius: 2cm; }

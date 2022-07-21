@@ -1,0 +1,72 @@
+/* Distintos bodys */
+.index{
+    background-image: url(../logos/outerspace-58.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-areas:
+        "header header header header" 
+        "main main main main"
+        "footer footer footer footer"   
+    ;
+}
+.home{
+    display: grid;
+    grid-template-areas: 
+        "header header header header" 
+        "main main main main"
+        "footer footer footer footer"   
+    ;
+}
+.servi{
+    background-color: map-get($colores, "color-fondo");
+    display: grid;
+    grid-template-areas: 
+        "header header header header" 
+        "main main main main"
+        "footer footer footer footer"
+    ;
+}
+.sobre-mi{
+    display: grid;
+    background-color: map-get($colores, "color-fondo");
+    grid-template-areas:
+        "header header header header" 
+        "main main main main"
+        "footer footer footer footer"
+    ;
+}
+.contacto{
+    display: grid;
+    background-color: map-get($colores, "color-fondo");
+    grid-template-areas:
+        "header header header header"
+        "main main main main"
+        "footer footer footer footer"
+    ;
+}
+.mantenimietoPC{
+    display: grid;
+    background-color: map-get($colores, "color-fondo");
+    grid-template-areas:
+        "header header header header"
+        "main main main main"
+        "footer footer footer footer"
+    ;
+}
+.desarrolloWeb{
+    display: grid;
+    background-color: map-get($colores, "color-fondo");
+    grid-template-areas:
+        "header header header header"
+        "main main main main"
+        "footer footer footer footer"
+    ;
+}
+.SK7__body{
+    background-color: black;
+    grid-template-areas:
+        "header header header header"
+        "main main main main"
+    ;
+}
