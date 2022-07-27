@@ -5,7 +5,7 @@
 /* Footer servicios */
 .raidy__footer__home{
     grid-area: footer;
-    background-color: cornflowerblue;
+    background-color: map-get($colores, "color-header-footer");
     display: flex;
     align-items: center;
     text-align: center;

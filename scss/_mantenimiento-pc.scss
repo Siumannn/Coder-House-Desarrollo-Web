@@ -1,11 +1,11 @@
 /* Main mantenimiento de pc */
 .mantenimientoPC__main{
     grid-area: main;
-}
-.mantenimientoPC__main__section{
-    display: flex;
-    text-align: center;
-    align-items: center;
+    &__section{
+        display: flex;
+        text-align: center;
+        align-items: center;
+    }
 }
 .h1__mantenimientoPC{
     text-align: center;

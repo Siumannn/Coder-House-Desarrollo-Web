@@ -1,3 +1,14 @@
 $colores:(
-    "color-fondo": #78794f
+    "color-fondo": #78794f,
+    "color-header-footer": #37718E,
+    "color-secciones-header": aqua,
+    "color-hover":black,
 );
+%grid{
+    display: grid;
+    grid-template-areas:
+        "header header header header" 
+        "main main main main"
+        "footer footer footer footer"   
+    ;
+}

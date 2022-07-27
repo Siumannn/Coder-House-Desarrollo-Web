@@ -3,65 +3,31 @@
     background-image: url(../logos/outerspace-58.gif);
     background-repeat: no-repeat;
     background-size: cover;
-    display: grid;
-    grid-template-areas:
-        "header header header header" 
-        "main main main main"
-        "footer footer footer footer"   
-    ;
+    @extend %grid;
 }
 .home{
-    display: grid;
-    grid-template-areas: 
-        "header header header header" 
-        "main main main main"
-        "footer footer footer footer"   
-    ;
+    background-color: map-get($colores, "color-fondo");
+    @extend %grid;
 }
 .servi{
     background-color: map-get($colores, "color-fondo");
-    display: grid;
-    grid-template-areas: 
-        "header header header header" 
-        "main main main main"
-        "footer footer footer footer"
-    ;
+    @extend %grid;
 }
 .sobre-mi{
-    display: grid;
     background-color: map-get($colores, "color-fondo");
-    grid-template-areas:
-        "header header header header" 
-        "main main main main"
-        "footer footer footer footer"
-    ;
+    @extend %grid;
 }
 .contacto{
-    display: grid;
     background-color: map-get($colores, "color-fondo");
-    grid-template-areas:
-        "header header header header"
-        "main main main main"
-        "footer footer footer footer"
-    ;
+    @extend %grid;
 }
 .mantenimietoPC{
-    display: grid;
     background-color: map-get($colores, "color-fondo");
-    grid-template-areas:
-        "header header header header"
-        "main main main main"
-        "footer footer footer footer"
-    ;
+    @extend %grid;
 }
 .desarrolloWeb{
-    display: grid;
     background-color: map-get($colores, "color-fondo");
-    grid-template-areas:
-        "header header header header"
-        "main main main main"
-        "footer footer footer footer"
-    ;
+    @extend %grid;
 }
 .SK7__body{
     background-color: black;

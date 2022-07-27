@@ -1,22 +1,22 @@
 /* Main de SK7 */
 .SK7__main{
     display: flex;
+    &__div{
+        text-align: center;
+        align-items: center;
+        margin-left: 30px;
+        height: 500px;
+        margin-top: 40px;
+    }
+    &__p{
+        color: white;
+        margin-top: 16.5%;
+        margin-right: 50px;
+    }
 }
 .SK7__img{
     width: 25%;
     margin: 1cm;
-}
-.SK7__main__div{
-    text-align: center;
-    align-items: center;
-    margin-left: 30px;
-    height: 500px;
-    margin-top: 40px;
-}
-.SK7__main__p{
-    color: white;
-    margin-top: 16.5%;
-    margin-right: 50px;
 }
 /* Discografia de SK7 */
 .SK7__main__discografia{
@@ -34,9 +34,9 @@
 .discografia__section_a{
     color: violet;
     margin-right: 30px;
-}
-.discografia__section__SK7{
-    margin-top: 15px;
+    &__SK7{
+        margin-top: 15px;
+    }
 }
 .SK7__h{
     color: white;

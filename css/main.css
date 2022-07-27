@@ -1,39 +1,30 @@
+.index, .home, .servi, .sobre-mi, .contacto, .mantenimietoPC, .desarrolloWeb {
+  display: grid;
+  grid-template-areas: "header header header header"  "main main main main" "footer footer footer footer"; }
+
 /* Distintos bodys */
 .index {
   background-image: url(../logos/outerspace-58.gif);
   background-repeat: no-repeat;
-  background-size: cover;
-  display: grid;
-  grid-template-areas: "header header header header"  "main main main main" "footer footer footer footer"; }
+  background-size: cover; }
 
 .home {
-  display: grid;
-  grid-template-areas: "header header header header"  "main main main main" "footer footer footer footer"; }
+  background-color: #78794f; }
 
 .servi {
-  background-color: #78794f;
-  display: grid;
-  grid-template-areas: "header header header header"  "main main main main" "footer footer footer footer"; }
+  background-color: #78794f; }
 
 .sobre-mi {
-  display: grid;
-  background-color: #78794f;
-  grid-template-areas: "header header header header"  "main main main main" "footer footer footer footer"; }
+  background-color: #78794f; }
 
 .contacto {
-  display: grid;
-  background-color: #78794f;
-  grid-template-areas: "header header header header" "main main main main" "footer footer footer footer"; }
+  background-color: #78794f; }
 
 .mantenimietoPC {
-  display: grid;
-  background-color: #78794f;
-  grid-template-areas: "header header header header" "main main main main" "footer footer footer footer"; }
+  background-color: #78794f; }
 
 .desarrolloWeb {
-  display: grid;
-  background-color: #78794f;
-  grid-template-areas: "header header header header" "main main main main" "footer footer footer footer"; }
+  background-color: #78794f; }
 
 .SK7__body {
   background-color: black;
@@ -51,28 +42,27 @@
   text-align: center; }
 
 .contacto__main__section {
-  display: flex;
-  margin-top: 5%;
-  margin-left: 5%; }
-
-.contacto__main__section__p {
-  text-align: center; }
+  display: flex; }
+  .contacto__main__section margin {
+    top: 5%;
+    left: 5%; }
+  .contacto__main__section__p {
+    text-align: center; }
 
 #inputEmail4 {
   width: 250px; }
 
 #inputAddress {
   width: 100%; }
-
-#inputAddress2 {
-  width: 100%; }
+  #inputAddress2 {
+    width: 100%; }
 
 .row-g-3 {
   margin-left: 80px; }
 
-.btn-primary {
-  margin-top: 15px;
-  margin-left: 85px; }
+.btn-primary margin {
+  top: 15px;
+  left: 85px; }
 
 .falsoCarrusel {
   width: 35%;
@@ -124,12 +114,11 @@ ul {
   height: 65px;
   display: flex;
   background-color: #37718E; }
+  .home__header__lista {
+    margin: auto; }
 
 .logo {
   width: 50px; }
-
-.home__header__lista {
-  margin: auto; }
 
 .anchors__home__header {
   color: black;
@@ -140,27 +129,23 @@ ul {
 
 .inicio__home {
   background-color: aqua; }
-
-.inicio__home:hover {
-  color: black; }
+  .inicio__home:hover {
+    color: black; }
 
 .servicios__home {
   background-color: aqua; }
-
-.servicios__home:hover {
-  color: black; }
+  .servicios__home:hover {
+    color: black; }
 
 .sobreMi__home {
   background-color: aqua; }
-
-.sobreMi__home:hover {
-  color: black; }
+  .sobreMi__home:hover {
+    color: black; }
 
 .contacto__home {
   background-color: aqua; }
-
-.contacto__home:hover {
-  color: black; }
+  .contacto__home:hover {
+    color: black; }
 
 .menu__desplegable {
   display: none; }
@@ -169,14 +154,12 @@ ul {
 .home__main {
   grid-area: main; }
 
-.card-img-top {
-  height: 392.5px; }
-
 .card {
   background-color: #78794f; }
-
-.card-title {
-  color: white; }
+  .card-img-top {
+    height: 392.5px; }
+  .card-title {
+    color: white; }
 
 .anchors__servi__p {
   text-align: center; }
@@ -188,7 +171,7 @@ ul {
 /* Footer Home */
 .raidy__footer__home {
   grid-area: footer;
-  background-color: cornflowerblue;
+  background-color: #37718E;
   display: flex;
   align-items: center;
   text-align: center;
@@ -235,11 +218,10 @@ ul {
 /* Main mantenimiento de pc */
 .mantenimientoPC__main {
   grid-area: main; }
-
-.mantenimientoPC__main__section {
-  display: flex;
-  text-align: center;
-  align-items: center; }
+  .mantenimientoPC__main__section {
+    display: flex;
+    text-align: center;
+    align-items: center; }
 
 .h1__mantenimientoPC {
   text-align: center; }
@@ -261,7 +243,7 @@ ul {
 /* Footer servicios */
 .raidy__footer__home {
   grid-area: footer;
-  background-color: cornflowerblue;
+  background-color: #37718E;
   display: flex;
   align-items: center;
   text-align: center;
@@ -273,6 +255,8 @@ ul {
 .sobre-mi__main__section {
   text-align: center;
   margin-top: 25px; }
+  .sobre-mi__main__section-img {
+    width: 350px; }
 
 .sobreMi__main__section {
   display: flex;
@@ -281,9 +265,6 @@ ul {
 .sobreMi__yo {
   text-align: center;
   margin-left: 45px; }
-
-.sobre-mi__main__section-img {
-  width: 350px; }
 
 .miBio {
   text-align: center; }
@@ -299,15 +280,13 @@ ul {
 /* Main de Desarrollo Web */
 .desarrolloWeb__main {
   grid-area: main; }
-
-.desarrolloWeb__main__section {
-  display: flex;
-  text-align: center;
-  align-items: center; }
-
-.desarrolloWeb__main__section__img {
-  width: 25%;
-  margin: 1cm; }
+  .desarrolloWeb__main__section {
+    display: flex;
+    text-align: center;
+    align-items: center; }
+  .desarrolloWeb__main__section__img {
+    width: 25%;
+    margin: 1cm; }
 
 .desarrolloWeb__info {
   width: 65%; }
@@ -419,22 +398,20 @@ ul {
 /* Main de SK7 */
 .SK7__main {
   display: flex; }
+  .SK7__main__div {
+    text-align: center;
+    align-items: center;
+    margin-left: 30px;
+    height: 500px;
+    margin-top: 40px; }
+  .SK7__main__p {
+    color: white;
+    margin-top: 16.5%;
+    margin-right: 50px; }
 
 .SK7__img {
   width: 25%;
   margin: 1cm; }
-
-.SK7__main__div {
-  text-align: center;
-  align-items: center;
-  margin-left: 30px;
-  height: 500px;
-  margin-top: 40px; }
-
-.SK7__main__p {
-  color: white;
-  margin-top: 16.5%;
-  margin-right: 50px; }
 
 /* Discografia de SK7 */
 .SK7__main__discografia {
@@ -452,9 +429,8 @@ ul {
 .discografia__section_a {
   color: violet;
   margin-right: 30px; }
-
-.discografia__section__SK7 {
-  margin-top: 15px; }
+  .discografia__section_a__SK7 {
+    margin-top: 15px; }
 
 .SK7__h {
   color: white; }

@@ -5,13 +5,14 @@
     align-items: center;
     height: 65px;
     display: flex;
-    background-color: #37718E;
+    background-color: map-get($colores, "color-header-footer");
+    
+    &__lista {
+        margin: auto;    
+    }
 }
 .logo{
     width: 50px;
-}
-.home__header__lista {
-    margin: auto;    
 }
 .anchors__home__header{
     color: black;
@@ -21,28 +22,28 @@
     border-right: 1px solid white;
 }
 .inicio__home{
-    background-color: aqua;    
-}
-.inicio__home:hover{
-    color: black;
+    background-color: map-get($colores,"color-secciones-header");
+    &:hover{
+        color: map-get($colores,"color-hover");
+    }  
 }
 .servicios__home{
-    background-color: aqua;
-}
-.servicios__home:hover{
-    color: black;
+    background-color: map-get($colores,"color-secciones-header");
+    &:hover{
+        color: map-get($colores,"color-hover");
+    }
 }
 .sobreMi__home{
-    background-color: aqua;
-}
-.sobreMi__home:hover{
-    color: black;
+    background-color: map-get($colores,"color-secciones-header");
+    &:hover{
+        color: map-get($colores,"color-hover");
+    }
 }
 .contacto__home{
-    background-color: aqua;
-}
-.contacto__home:hover{
-    color: black;
+    background-color: map-get($colores,"color-secciones-header");
+    &:hover{
+        color: map-get($colores,"color-hover");
+    }
 }
 .menu__desplegable{
     display: none;
@@ -51,14 +52,14 @@
 .home__main{
     grid-area: main;
 }
-.card-img-top{
-    height: 392.5px;
-}
 .card{
-    background-color: #78794f;
-}
-.card-title{
-    color: white;
+    background-color: map-get($colores, "color-fondo");
+    &-img-top{
+        height: 392.5px;
+    }
+    &-title{
+        color: white;
+    }
 }
 .anchors__servi__p{
     text-align: center;
@@ -70,7 +71,7 @@
 /* Footer Home */
 .raidy__footer__home{
     grid-area: footer;
-    background-color: cornflowerblue;
+    background-color: map-get($colores, "color-header-footer");
     display: flex;
     align-items: center;
     text-align: center;

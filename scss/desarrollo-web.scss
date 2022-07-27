@@ -1,15 +1,15 @@
 /* Main de Desarrollo Web */
 .desarrolloWeb__main{
     grid-area: main;
-}
-.desarrolloWeb__main__section{
-    display: flex;
-    text-align: center;
-    align-items: center;
-}
-.desarrolloWeb__main__section__img{
-    width: 25%;
-    margin: 1cm;
+    &__section{
+        display: flex;
+        text-align: center;
+        align-items: center;
+    }
+    &__section__img{
+        width: 25%;
+        margin: 1cm;
+    }
 }
 .desarrolloWeb__info{
     width: 65%;
