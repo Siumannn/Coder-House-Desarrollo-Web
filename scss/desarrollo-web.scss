@@ -1,0 +1,22 @@
+/* Main de Desarrollo Web */
+.desarrolloWeb__main{
+    grid-area: main;
+}
+.desarrolloWeb__main__section{
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+.desarrolloWeb__main__section__img{
+    width: 25%;
+    margin: 1cm;
+}
+.desarrolloWeb__info{
+    width: 65%;
+}
+.desarrolloWeb__p{
+    margin-top: 25px;
+}
+.desarrolloWeb__h1{
+    text-align: center;
+}

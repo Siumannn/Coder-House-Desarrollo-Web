@@ -41,3 +41,20 @@
     border: 1px solid white;
     animation: carrusel 10s infinite;
 }
+@keyframes carrusel{
+    0%{
+        background-image: url(../logos/carrusel-img1.png);
+    }
+    20%{
+        background-image: url(../logos/carrusel-img2.png);
+    }
+    45%{
+        background-image: url(../logos/carrusel-img3.png);
+    }
+    70%{
+        background-image: url(../logos/carrusel-img4.png);
+    }
+    100%{
+        background-image: url(../logos/carrusel-img5.png);
+    }
+}

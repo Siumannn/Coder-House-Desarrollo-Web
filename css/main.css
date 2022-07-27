@@ -82,6 +82,18 @@
   border: 1px solid white;
   animation: carrusel 10s infinite; }
 
+@keyframes carrusel {
+  0% {
+    background-image: url(../logos/carrusel-img1.png); }
+  20% {
+    background-image: url(../logos/carrusel-img2.png); }
+  45% {
+    background-image: url(../logos/carrusel-img3.png); }
+  70% {
+    background-image: url(../logos/carrusel-img4.png); }
+  100% {
+    background-image: url(../logos/carrusel-img5.png); } }
+
 /* Ajustes generales */
 * {
   margin: 0;
@@ -220,6 +232,28 @@ ul {
 .raidy__footer__redes {
   width: 3%; }
 
+/* Main mantenimiento de pc */
+.mantenimientoPC__main {
+  grid-area: main; }
+
+.mantenimientoPC__main__section {
+  display: flex;
+  text-align: center;
+  align-items: center; }
+
+.h1__mantenimientoPC {
+  text-align: center; }
+
+.p__mantenimientoPC {
+  margin-top: 25px; }
+
+.mantenimientoPC__foto {
+  width: 25%;
+  margin: 1cm; }
+
+.mantenimientoPC__info {
+  width: 65%; }
+
 /* Main Servicios */
 .servicios__main {
   grid-area: main; }
@@ -261,3 +295,172 @@ ul {
 .SK7 {
   color: white;
   border-radius: 2cm; }
+
+/* Main de Desarrollo Web */
+.desarrolloWeb__main {
+  grid-area: main; }
+
+.desarrolloWeb__main__section {
+  display: flex;
+  text-align: center;
+  align-items: center; }
+
+.desarrolloWeb__main__section__img {
+  width: 25%;
+  margin: 1cm; }
+
+.desarrolloWeb__info {
+  width: 65%; }
+
+.desarrolloWeb__p {
+  margin-top: 25px; }
+
+.desarrolloWeb__h1 {
+  text-align: center; }
+
+/* Media Queris */
+@media screen and (max-width: 768px) {
+  .index__pregunta {
+    width: 30%; }
+  .index__p__bootstrap {
+    font-size: 15px;
+    margin-right: 20px; }
+  .grid {
+    display: block; }
+  .banderas {
+    margin: auto;
+    width: 55%;
+    letter-spacing: 3cm; }
+  .video {
+    margin-top: 40px;
+    width: 40%;
+    height: 180px; }
+  .raidy__footer__redes {
+    width: 5%; }
+  /* home */
+  .card {
+    height: 475px; }
+  .menu__desplegable {
+    display: none; } }
+
+@media screen and (max-width: 425px) {
+  .index__pregunta {
+    width: 52%; }
+  .index__p__bootstrap {
+    font-size: 15px;
+    margin-right: 20px; }
+  .grid {
+    display: block; }
+  .banderas {
+    margin: auto;
+    width: 80%;
+    letter-spacing: 3cm; }
+  .video {
+    margin-top: 50px;
+    width: 60%;
+    height: 60%; }
+  .raidy__footer__redes {
+    width: 8%; }
+  /* home */
+  .card {
+    height: 550px; }
+  .contacto__header__home {
+    margin-left: 85px; } }
+
+@media screen and (max-width: 375px) {
+  .home__header {
+    height: 135px; }
+  .home__header__lista {
+    display: none; }
+  .menu__desplegable {
+    display: block;
+    position: relative;
+    margin-left: 73%; }
+  .menu {
+    display: none; }
+  .secciones__li__home {
+    display: flex;
+    position: absolute;
+    text-align: center; }
+  .hamburguesa {
+    background-color: grey;
+    width: 50px;
+    height: 48px;
+    border-radius: 6px;
+    display: block;
+    padding: 0.2px; }
+  .hamburguesa span {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    display: block;
+    margin: 8px; }
+  .input {
+    position: absolute;
+    top: 0;
+    margin: 18.5px;
+    display: none; }
+  .input:checked + .menu {
+    display: block;
+    transform: translate(-320px, 5px); }
+  .anchors__home {
+    margin-right: 15px;
+    color: black; } }
+
+@media screen and (max-width: 320px) {
+  .menu__desplegable {
+    margin-left: 67.5%; }
+  .input:checked + .menu {
+    display: block;
+    transform: translate(-270px, 10px); }
+  .anchors__home {
+    font-size: 13px; } }
+
+/* Main de SK7 */
+.SK7__main {
+  display: flex; }
+
+.SK7__img {
+  width: 25%;
+  margin: 1cm; }
+
+.SK7__main__div {
+  text-align: center;
+  align-items: center;
+  margin-left: 30px;
+  height: 500px;
+  margin-top: 40px; }
+
+.SK7__main__p {
+  color: white;
+  margin-top: 16.5%;
+  margin-right: 50px; }
+
+/* Discografia de SK7 */
+.SK7__main__discografia {
+  grid-area: main;
+  margin: 1cm; }
+
+.SK7__section__discografia {
+  display: flex;
+  margin-top: 15px; }
+
+.sencillosEP {
+  margin-top: 15px;
+  color: white; }
+
+.discografia__section_a {
+  color: violet;
+  margin-right: 30px; }
+
+.discografia__section__SK7 {
+  margin-top: 15px; }
+
+.SK7__h {
+  color: white; }
+
+/* Galeria SK7 */
+.h2__galeria__sk7 {
+  margin-top: 50px;
+  margin-left: 11px;
+  color: white; }

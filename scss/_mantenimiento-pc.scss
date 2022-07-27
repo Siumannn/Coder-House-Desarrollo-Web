@@ -1,0 +1,22 @@
+/* Main mantenimiento de pc */
+.mantenimientoPC__main{
+    grid-area: main;
+}
+.mantenimientoPC__main__section{
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+.h1__mantenimientoPC{
+    text-align: center;
+}
+.p__mantenimientoPC{
+    margin-top: 25px;
+}
+.mantenimientoPC__foto{
+    width: 25%;
+    margin: 1cm;
+}
+.mantenimientoPC__info{
+    width: 65%;
+}
